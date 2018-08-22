@@ -118,9 +118,9 @@ body {
 .main-btn_wrapper {
   position: absolute;
   right: -25%;
-  top: calc(50% - 18px);
-  width: 36px;
-  height: 36px;
+  top: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
   background-color: #fff9e1;
   border-radius: 50%;
   text-align: center;
@@ -130,7 +130,7 @@ body {
   transform-origin: bottom;
 }
 .main-btn_wrapper .main-btn {
-  line-height: 36px;
+  line-height: 40px;
 }
 
 .header {
@@ -529,10 +529,10 @@ body {
   background-image: url(../img/cri_news.jpg);
 }
 .list .list_item:nth-child(3) .thumb {
-  background-image: url(https://i1.sndcdn.com/artworks-000091003491-upr0rf-large.jpg);
+  background-image: url(../img/beijing_music_radio.jpg);
 }
 .list .list_item:nth-child(4) .thumb {
-  background-image: url(https://i1.sndcdn.com/artworks-000125642440-o2ff73-large.jpg);
+  background-image: url(../img/iradio.jpg);
 }
 .list .list_item:nth-child(5) .thumb {
   background-image: url(https://i1.sndcdn.com/artworks-000174340505-wv6dl1-large.jpg);

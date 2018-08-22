@@ -454,8 +454,8 @@ $('.list_wrapper li').each(function() {
 		var src = $(this).find('.info').attr('data-src');
 		var title = $(this).find('.title').text();
 		var artist = $(this).find('.artist').text();
-		$('#player, .mini-player').find('.title').text(title);
-		$('#player, .mini-player').find('.artist').text(artist);
+		$('#player .playback_info, .mini-player').find('.title').text(title);
+		$('#player .playback_info, .mini-player').find('.artist').text(artist);
 		$('.playback_blur, .playback_thumb, .track_info_wrapper .track_info .thumb').css('background-image', img);
 		$('#player').find('.playback_info').attr('data-src', src);
 
@@ -491,7 +491,11 @@ function play() {
 		// console.log('src is: ' + src);
 		$('#video').attr('src', src);
 		var video = document.querySelector('#video');
-		video.play();
+        video.play();
+        video.ontimeupdate = function() {
+            $('.playback_timeline_start-time').text(video.currentTime)
+        };
+        $(document).attr("title", $('#player .playback_info').find('.title').text() + " - Frank inDev.");
 	} else {
 		alert('hls not supported...')
 	}
