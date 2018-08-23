@@ -1,3 +1,8 @@
+// define video
+var src = $('#player').find('.playback_info').attr('data-src');
+$('#video source').attr('src', src);
+var video = videojs('video');
+
 // ===== Open Nav =====
 $(".burger-wrapper").click(function () {
 
@@ -125,7 +130,7 @@ $('.btn-play').click(function () {
             ease: Power2.easeInOut
         });
 
-    play();
+    play(video);
 });
 
 $('.btn-pause').click(function () {
@@ -149,7 +154,7 @@ $('.btn-pause').click(function () {
             ease: Power2.easeInOut
         });
 
-    pause();
+    pause(video);
 });
 
 // ===== HoverIn/HoverOut Flash Effect =====
@@ -448,46 +453,29 @@ $('.back_btn').click(function () {
     }
 });
 
-function play() {
-    var src = $('#player').find('.playback_info').attr('data-src');
-
-    if (Hls.isSupported()) {
-        console.log('hls supported!');
-        // console.log('src is: ' + src);
-        $('#video').attr('src', src);
-        var video = document.querySelector('#video');
+function play(video) {
+    $('.playback_timeline_start-time').text('Buffering...');
+    video.ready(function() {
         video.play();
-        video.onerror = function() {
-            $('.playback_timeline_start-time').text("Error...");
-        }
-        video.onloadstart = function() {
-            $('.playback_timeline_start-time').text("Buffering...");
-        };
-        var title = $('#player .playback_info').find('.title').text()
-        $(document).attr("title", title + " - Radio, Frank inDev.");
-        $('.text-wrap .text span').text(title);
-        video.oncanplay = function() {
-            var start = new Date();
-            updateTime(start);
-        }
-    } else {
-        alert('hls not supported...')
-    }
+        var start = new Date();
+        updateTime(start);
+    });
+    var title = $('#player .playback_info').find('.title').text()
+    $(document).attr("title", title + " - Radio, Frank inDev.");
+    $('.text-wrap .text span').text(title);
 }
 
-function pause() {
-    var video = document.querySelector('#video');
+function pause(video) {
     video.pause();
-    console.log('paused...')
+    // console.log('paused...')
 }
 
 function updateTime(start) {
-    var video = document.querySelector('#video');
-    video.ontimeupdate = function () {
+    video.on('timeupdate', function() {
         var seconds = (new Date() - start) / 1000;
         var textTime = formatTime(seconds);
         $('.playback_timeline_start-time').text(textTime);
-    };
+    });
 }
 
 function formatTime(seconds) {
@@ -499,7 +487,6 @@ function formatTime(seconds) {
 }
 
 $.getJSON( "./js/channel.json", function( data ) {
-    var count = 1;
     data.channel.forEach(function(item) {
         var html = `
             <li class="list_item">
@@ -519,6 +506,7 @@ $.getJSON( "./js/channel.json", function( data ) {
             $(this).addClass('selected');
             var img = $(this).find('.thumb').css('background-image');
             var src = $(this).find('.info').attr('data-src');
+            var newSrc = src;
             var title = $(this).find('.title').text();
             var artist = $(this).find('.artist').text();
             $('#player .playback_info, .mini-player').find('.title').text(title);
@@ -545,8 +533,29 @@ $.getJSON( "./js/channel.json", function( data ) {
                     display: 'block',
                     ease: Power2.easeInOut
                 });
-    
-            play();
+
+            $('#video source').attr('src', src);
+            var type = newSrc.split('.');
+            type = type[type.length - 1];
+            // console.log(type);
+            if (type == 'm3u8') {
+                video.src({
+                    src: newSrc,
+                    overrideNative: true
+                });
+            } else if (type == 'mp3') {
+                video.src({
+                    src: newSrc,
+                    overrideNative: false
+                });
+            } else {
+                video.src({
+                    src: newSrc,
+                    type: 'audio/aac',
+                    overrideNative: false
+                });
+            }
+            play(video);
         })
     });
 });

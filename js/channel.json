@@ -21,13 +21,13 @@
         {
             "title": "环球资讯广播",
             "org": "CRI - 中国国际广播电台",
-            "src": "http://sk.cri.cn/905.m3u8",
+            "src": "http://cri-lh.akamaihd.net/i/cri905_1@183457/master.m3u8",
             "img": "../img/cri_news.jpg"
         },
         {
             "title": "中国之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "http://live.xmcdn.com/live/1065/64.m3u8",
+            "src": "http://rtmpcnr001.cnr.cn/live/zgzs/playlist.m3u8",
             "img": "../img/cnr_voc.jpg"
         },
         {
@@ -39,19 +39,19 @@
         {
             "title": "岷江音乐",
             "org": "四川人民广播电台",
-            "src": "http://live.xmcdn.com/live/751/64.m3u8",
+            "src": "https://lhttp.qingting.fm/live/1110/64k.mp3",
             "img": "../img/iradio.jpg"
         },
         {
             "title": "HitFM",
             "org": "CRI - 中国国际广播电台",
-            "src": "http://sk.cri.cn/887.m3u8",
+            "src": "http://cri-lh.akamaihd.net/i/cri887_1@183455/master.m3u8",
             "img": "../img/cri_hitfm.jpg"
         },
         {
             "title": "相声广播",
             "org": "天津人民广播电台",
-            "src": "http://lhttp.qingting.fm/live/1175/64k.mp3",
+            "src": "https://lhttp.qingting.fm/live/1175/64k.mp3",
             "img": "../img/tianjin_xiangsheng.jpg"
         },
         {
@@ -67,9 +67,9 @@
             "img": "../img/rthk_radio1.jpg"
         },
         {
-            "title": "Heart Radio, London",
+            "title": "Heart Radio",
             "org": "Global Media & Entertainment",
-            "src": "http://media-ice.musicradio.com/HeartLondon",
+            "src": "http://vis.media-ice.musicradio.com/HeartUK",
             "img": "../img/heart_radio.png"
         },
         {
