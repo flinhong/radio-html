@@ -281,7 +281,7 @@ body {
   background-color: #D3D6DA;
   border-radius: 2px;
   background-size: cover;
-  background-image: url("../img/bbc_radio_1.png");
+  background-image: url("../img/6_music.png");
 }
 .track_info_wrapper .track_info .title {
   white-space: nowrap;
@@ -366,7 +366,7 @@ body {
   transform: scale(1.1);
   filter: blur(32px);
   opacity: 0.24;
-  background-image: url(../img/bbc_radio_1.png);
+  background-image: url(../img/6_music.png);
   transition: 1s;
 }
 
@@ -379,7 +379,7 @@ body {
   position: absolute;
   margin: 35px;
   box-shadow: 0px 12px 30px 0px rgba(97, 45, 45, 0.2);
-  background-image: url(../img/bbc_radio_1.png);
+  background-image: url(../img/6_music.png);
   transition: 1s;
 }
 
@@ -523,7 +523,7 @@ body {
 }
 
 .list .list_item:nth-child(1) .thumb {
-  background-image: url(../img/bbc_radio_1.png);
+  background-image: url(../img/6_music.png);
 }
 
 .selected {
@@ -670,7 +670,7 @@ body {
   transition: 0.5s;
 }
 
-.curator_list_content .item:nth-child(3) .thumb {
+/* .curator_list_content .item:nth-child(3) .thumb {
   background-image: url(https://i1.sndcdn.com/avatars-000202649537-6368nw-t250x250.jpg);
 }
 .curator_list_content .item:nth-child(4) .thumb {
@@ -693,7 +693,7 @@ body {
 }
 .curator_list_content .item:nth-child(10) .thumb {
   background-image: url(https://i1.sndcdn.com/avatars-000265518371-amlg8s-t250x250.jpg);
-}
+} */
 
 .shadow {
   box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.4);
