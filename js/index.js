@@ -66,7 +66,7 @@ $(".burger-wrapper").click(function () {
 
 // ===== Open Player + dim on =====
 
-$(".btn-open-player, .track_info, .text-wrap .text").click(function () {
+$(".btn-open-player, .track_info").click(function () {
     TweenMax.to(".dim", 0.5, {
         opacity: 1,
         display: 'block',
@@ -288,57 +288,57 @@ $('.item').hover(function () {
 // ===== Home Page to Curation Page Transition  =====
 // ===== Main Play Button Activate =====
 
-// $('.text-wrap .text').click(function() {
+$('.text-wrap .text').click(function() {
 
-//     var homeToMain = new TimelineMax({});
+    var homeToMain = new TimelineMax({});
 
-//     // Hide
-//     $('.logo-text').css('display', 'none'),
-//         homeToMain.to($('.line, .text-wrap'), 0.5, {
-//             display: 'none',
-//             opacity: 0,
-//             y: -20,
-//             ease: Power2.easeInOut
-//         }, 0),
+    // Hide
+    $('.logo-text').css('display', 'none'),
+        homeToMain.to($('.line, .text-wrap'), 0.5, {
+            display: 'none',
+            opacity: 0,
+            y: -20,
+            ease: Power2.easeInOut
+        }, 0),
 
-//         // Background down
-//         homeToMain.to($('.wave-container'), 1, {
-//             yPercent: 30,
-//             ease: Power2.easeInOut
-//         }, 0),
+        // Background down
+        homeToMain.to($('.wave-container'), 1, {
+            yPercent: 30,
+            ease: Power2.easeInOut
+        }, 0),
 
-//         // Show
-//         $('#curator').css('display', 'block'),
-//         homeToMain.fromTo($('.back_btn'), 0.8, {
-//             x: 15
-//         }, {
-//             display: 'flex',
-//             opacity: 1,
-//             x: 0,
-//             ease: Power2.easeInOut
-//         }, 1),
+        // Show
+        $('#curator').css('display', 'block'),
+        homeToMain.fromTo($('.back_btn'), 0.8, {
+            x: 15
+        }, {
+            display: 'flex',
+            opacity: 1,
+            x: 0,
+            ease: Power2.easeInOut
+        }, 1),
 
-//         homeToMain.fromTo($('.curator_title_wrapper'), 0.8, {
-//             opacity: 0,
-//             x: 30
-//         }, {
-//             opacity: 1,
-//             x: 0,
-//             ease: Power2.easeInOut
-//         }, 1),
+        homeToMain.fromTo($('.curator_title_wrapper'), 0.8, {
+            opacity: 0,
+            x: 30
+        }, {
+            opacity: 1,
+            x: 0,
+            ease: Power2.easeInOut
+        }, 1),
 
-//         homeToMain.fromTo($('.curator_list'), 0.8, {
-//             opacity: 0,
-//             display: 'none',
-//             x: 30
-//         }, {
-//             opacity: 1,
-//             x: 0,
-//             display: 'block',
-//             ease: Power2.easeInOut
-//         }, 1.2)
+        homeToMain.fromTo($('.curator_list'), 0.8, {
+            opacity: 0,
+            display: 'none',
+            x: 30
+        }, {
+            opacity: 1,
+            x: 0,
+            display: 'block',
+            ease: Power2.easeInOut
+        }, 1.2)
 
-// });
+});
 
 
 // ===== Curation Page to Playlist Page Transition  =====
@@ -462,7 +462,7 @@ function play(video) {
     });
     var title = $('#player .playback_info').find('.title').text()
     $(document).attr("title", title + " - Radio, Frank inDev.");
-    $('.text-wrap .text span').text(title);
+    // $('.text-wrap .text span').text(title);
 }
 
 function pause(video) {
@@ -487,7 +487,7 @@ function formatTime(seconds) {
 }
 
 $.getJSON( "./js/channel.json", function( data ) {
-    data.channel.forEach(function(item) {
+    data.radioChannel.forEach(function(item) {
         var html = `
             <li class="list_item">
             <div class="thumb" style="background-image: url(${item.img})"> </div>
@@ -537,7 +537,7 @@ $.getJSON( "./js/channel.json", function( data ) {
             $('#video source').attr('src', src);
             var type = newSrc.split('.');
             type = type[type.length - 1];
-            // console.log(type);
+            console.log(type);
             if (type == 'm3u8') {
                 video.src({
                     src: newSrc,

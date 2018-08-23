@@ -670,7 +670,7 @@ body {
   transition: 0.5s;
 }
 
-/* .curator_list_content .item:nth-child(3) .thumb {
+.curator_list_content .item:nth-child(3) .thumb {
   background-image: url(https://i1.sndcdn.com/avatars-000202649537-6368nw-t250x250.jpg);
 }
 .curator_list_content .item:nth-child(4) .thumb {
@@ -693,7 +693,7 @@ body {
 }
 .curator_list_content .item:nth-child(10) .thumb {
   background-image: url(https://i1.sndcdn.com/avatars-000265518371-amlg8s-t250x250.jpg);
-} */
+}
 
 .shadow {
   box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.4);
