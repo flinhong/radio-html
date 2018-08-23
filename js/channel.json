@@ -71,6 +71,12 @@
             "org": "Global Media & Entertainment",
             "src": "http://media-ice.musicradio.com/HeartLondon",
             "img": "../img/heart_radio.png"
+        },
+        {
+            "title": "古典音樂台",
+            "org": "Family Broadcasting Company",
+            "src": "http://59.120.88.155:8000/live.mp3",
+            "img": "../img/classical.jpg"
         }
     ]
 }
