@@ -110,9 +110,9 @@ body {
 }
 .text-wrap span {
   color: #fff9e1;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 300;
-  padding: 0 2%;
+  padding: 0 10px;
 }
 
 .main-btn_wrapper {
@@ -524,27 +524,6 @@ body {
 
 .list .list_item:nth-child(1) .thumb {
   background-image: url(../img/bbc_radio_1.png);
-}
-.list .list_item:nth-child(2) .thumb {
-  background-image: url(../img/cri_news.jpg);
-}
-.list .list_item:nth-child(3) .thumb {
-  background-image: url(../img/beijing_music_radio.jpg);
-}
-.list .list_item:nth-child(4) .thumb {
-  background-image: url(../img/iradio.jpg);
-}
-.list .list_item:nth-child(5) .thumb {
-  background-image: url(https://i1.sndcdn.com/artworks-000174340505-wv6dl1-large.jpg);
-}
-.list .list_item:nth-child(6) .thumb {
-  background-image: url(https://i1.sndcdn.com/artworks-000169142537-e22x2o-large.jpg);
-}
-.list .list_item:nth-child(7) .thumb {
-  background-image: url(https://i1.sndcdn.com/artworks-000180119811-wgpequ-large.jpg);
-}
-.list .list_item:nth-child(8) .thumb {
-  background-image: url(https://i1.sndcdn.com/artworks-000133986066-hf1rz6-large.jpg);
 }
 
 .selected {
