@@ -1,6 +1,12 @@
 {
     "channel": [
         {
+            "title": "World News",
+            "org": "BBC",
+            "src": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk",
+            "img": "../img/bbc_news_world.gif"
+        },
+        {
             "title": "环球资讯广播",
             "org": "CRI - 中国国际广播电台",
             "src": "http://sk.cri.cn/905.m3u8",
