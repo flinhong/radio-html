@@ -27,7 +27,7 @@
         {
             "title": "中国之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "http://rtmpcnr001.cnr.cn/live/zgzs/playlist.m3u8",
+            "src": "https://lhttp.qingting.fm/live/386/64k.mp3",
             "img": "../img/cnr_voc.jpg"
         },
         {
@@ -57,7 +57,7 @@
         {
             "title": "动感 101",
             "org": "SMG - 上海文广新闻传媒集团",
-            "src": "http://rs-bj.ajmide.com/r_11/live_11.m3u8",
+            "src": "https://lhttp.qingting.fm/live/274/64k.mp3",
             "img": "../img/101.jpg"
         },
         {
