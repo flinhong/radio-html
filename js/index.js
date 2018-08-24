@@ -516,7 +516,7 @@ $(document).ready(function () {
 function processData(data) {
     $('#list').empty();
     data.forEach(function (item) {
-        console.log(item.src);
+        // console.log(item.src);
         var html = `
             <li class="list_item">
             <div class="thumb" style="background-image: url(${item.img})"> </div>
