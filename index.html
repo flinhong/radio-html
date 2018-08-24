@@ -54,9 +54,9 @@
       <div class="track_info_wrapper">
         <div class="track_info">
           <div class="thumb"></div>
-          <div class="info" data-src="https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_6music.m3u8">
-            <div class="title">6 Music</div>
-            <div class="artist">BBC</div>
+          <div class="info">
+            <div class="title">环球资讯广播</div>
+            <div class="artist">CRI - 中国国际广播电台</div>
           </div>
         </div>
       </div>
@@ -72,9 +72,9 @@
       <div class="playback_wrapper">
         <div class="playback_blur"></div>
         <div class="playback_thumb"></div>
-        <div class="playback_info" data-src="https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_6music.m3u8">
-          <div class="title">6 Music</div>
-          <div class="artist">BBC</div>
+        <div class="playback_info" data-src="http://cri-lh.akamaihd.net/i/cri905_1@183457/master.m3u8">
+          <div class="title">环球资讯广播</div>
+          <div class="artist">CRI - 中国国际广播电台</div>
         </div>
         <div class="playback_btn_wrapper">
           <!-- <i class="btn-prev fa fa-step-backward" aria-hidden="true"></i> -->
@@ -107,42 +107,29 @@
       </div>
       <div class="curator_list">
         <div class="curator_list_content">
-          <div class="connect_btn_wrapper item">
+          <div class="connect_btn_wrapper item" id="default">
             <div class="connect_btn">
-              <div class="connect_btn_text">TV <br/>Steaming
+              <div class="connect_btn_text">Default <br/>Channels
               </div>
             </div>
           </div>
-          <div class="curator_list_content_desc">Or Select <br/>a list <br/>
+          <div class="curator_list_content_desc">Or Select <br/>another list <br/>
           </div>
-          <div class="item">
-            <div class="thumb"></div>
+          <div class="item" id="bbc">
+            <div class="thumb" style="background-image: url('../img/bbc.jpg');"></div>
             <div class="info">
-              <div class="name">Fantasy</div>
-              <div class="desc">Sam</div>
+              <div class="name">BBC Radios</div>
+              <div class="desc">United Kingdom</div>
             </div>
           </div>
-          <div class="item">
-            <div class="thumb"></div>
+          <div class="item" id="cnr">
+            <div class="thumb" style="background-image: url('../img/cnr.gif');"></div>
             <div class="info">
-              <div class="name">Fantasy</div>
-              <div class="desc">Sam</div>
+              <div class="name">中央人民广播电台</div>
+              <div class="desc">北京</div>
             </div>
           </div>
-          <div class="item">
-            <div class="thumb"></div>
-            <div class="info">
-              <div class="name">Fantasy</div>
-              <div class="desc">Sam</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb"></div>
-            <div class="info">
-              <div class="name">Fantasy</div>
-              <div class="desc">Sam</div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -156,7 +143,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js'></script>
   <script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
-  <!-- <script src="https://unpkg.com/@videojs/http-streaming@1.2.4/dist/videojs-http-streaming.min.js"></script> -->
 
   <script src="js/index.js"></script>
 

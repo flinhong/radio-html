@@ -281,7 +281,7 @@ body {
   background-color: #D3D6DA;
   border-radius: 2px;
   background-size: cover;
-  background-image: url("../img/6_music.png");
+  background-image: url("../img/cri_news.jpg");
 }
 .track_info_wrapper .track_info .title {
   white-space: nowrap;
@@ -366,7 +366,7 @@ body {
   transform: scale(1.1);
   filter: blur(32px);
   opacity: 0.24;
-  background-image: url(../img/6_music.png);
+  background-image: url('../img/cri_news.jpg');
   transition: 1s;
 }
 
@@ -379,7 +379,7 @@ body {
   position: absolute;
   margin: 35px;
   box-shadow: 0px 12px 30px 0px rgba(97, 45, 45, 0.2);
-  background-image: url(../img/6_music.png);
+  background-image: url('../img/cri_news.jpg');
   transition: 1s;
 }
 
@@ -668,31 +668,6 @@ body {
   background-size: cover;
   margin-bottom: 20px;
   transition: 0.5s;
-}
-
-.curator_list_content .item:nth-child(3) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000202649537-6368nw-t250x250.jpg);
-}
-.curator_list_content .item:nth-child(4) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000249865900-64rve1-t250x250.jpg);
-}
-.curator_list_content .item:nth-child(5) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000270812013-6zuevs-t250x250.jpg);
-}
-.curator_list_content .item:nth-child(6) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000213988027-6nutce-t250x250.jpg);
-}
-.curator_list_content .item:nth-child(7) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000187841543-7rhmm0-t250x250.jpg);
-}
-.curator_list_content .item:nth-child(8) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000248045110-uq3jhv-t250x250.jpg);
-}
-.curator_list_content .item:nth-child(9) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000276749358-7c1upz-t250x250.jpg);
-}
-.curator_list_content .item:nth-child(10) .thumb {
-  background-image: url(https://i1.sndcdn.com/avatars-000265518371-amlg8s-t250x250.jpg);
 }
 
 .shadow {

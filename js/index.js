@@ -66,7 +66,7 @@ $(".burger-wrapper").click(function () {
 
 // ===== Open Player + dim on =====
 
-$(".btn-open-player, .track_info").click(function () {
+$(".btn-open-player, .track_info, #curator .item").click(function () {
     TweenMax.to(".dim", 0.5, {
         opacity: 1,
         display: 'block',
@@ -105,6 +105,22 @@ $('.dim').click(function () {
         x: 0,
         ease: Expo.easeOut
     });
+
+    if ($('#curator').css("display") == "none" && $('.back_btn').css("display") == 'flex') {
+        var playlistToMain = new TimelineMax({});
+
+        // Hide
+        playlistToMain.fromTo($('#curator'), 0.8, {
+            display: 'none',
+            opacity: 0,
+            scale: 1.1
+        }, {
+                display: 'block',
+                opacity: 1,
+                scale: 1,
+                ease: Power2.easeInOut
+            }, 0)
+    }
 });
 
 // ===== Mini Player - Play/Pause Switch =====
@@ -236,22 +252,21 @@ $('.text-wrap .text').hover(function () {
             ease: Expo.easeOut
         })
 },
-
-    function () {
-        TweenMax.to($('.main-btn_wrapper'), 0.5, {
-            opacity: 0,
-            display: 'none',
-            scale: 0,
-            ease: Elastic.easeOut.config(1, 0.75)
-        }),
-            TweenMax.to($('.line'), 0.5, {
-                css: {
-                    scaleY: 1,
-                    transformOrigin: "center center"
-                },
-                ease: Expo.easeOut
-            })
-    });
+function () {
+    TweenMax.to($('.main-btn_wrapper'), 0.5, {
+        opacity: 0,
+        display: 'none',
+        scale: 0,
+        ease: Elastic.easeOut.config(1, 0.75)
+    }),
+        TweenMax.to($('.line'), 0.5, {
+            css: {
+                scaleY: 1,
+                transformOrigin: "center center"
+            },
+            ease: Expo.easeOut
+        })
+});
 
 
 // ===== Curation Page  =====
@@ -288,7 +303,7 @@ $('.item').hover(function () {
 // ===== Home Page to Curation Page Transition  =====
 // ===== Main Play Button Activate =====
 
-$('.text-wrap .text').click(function() {
+$('.text-wrap .text').click(function () {
 
     var homeToMain = new TimelineMax({});
 
@@ -312,31 +327,31 @@ $('.text-wrap .text').click(function() {
         homeToMain.fromTo($('.back_btn'), 0.8, {
             x: 15
         }, {
-            display: 'flex',
-            opacity: 1,
-            x: 0,
-            ease: Power2.easeInOut
-        }, 1),
+                display: 'flex',
+                opacity: 1,
+                x: 0,
+                ease: Power2.easeInOut
+            }, 1),
 
         homeToMain.fromTo($('.curator_title_wrapper'), 0.8, {
             opacity: 0,
             x: 30
         }, {
-            opacity: 1,
-            x: 0,
-            ease: Power2.easeInOut
-        }, 1),
+                opacity: 1,
+                x: 0,
+                ease: Power2.easeInOut
+            }, 1),
 
         homeToMain.fromTo($('.curator_list'), 0.8, {
             opacity: 0,
             display: 'none',
             x: 30
         }, {
-            opacity: 1,
-            x: 0,
-            display: 'block',
-            ease: Power2.easeInOut
-        }, 1.2)
+                opacity: 1,
+                x: 0,
+                display: 'block',
+                ease: Power2.easeInOut
+            }, 1.2)
 
 });
 
@@ -455,7 +470,7 @@ $('.back_btn').click(function () {
 
 function play(video) {
     $('.playback_timeline_start-time').text('Buffering...');
-    video.ready(function() {
+    video.ready(function () {
         video.play();
         var start = new Date();
         updateTime(start);
@@ -471,7 +486,7 @@ function pause(video) {
 }
 
 function updateTime(start) {
-    video.on('timeupdate', function() {
+    video.on('timeupdate', function () {
         var seconds = (new Date() - start) / 1000;
         var textTime = formatTime(seconds);
         $('.playback_timeline_start-time').text(textTime);
@@ -486,8 +501,21 @@ function formatTime(seconds) {
     return minutes + ":" + seconds;
 }
 
-$.getJSON( "./js/channel.json", function( data ) {
-    data.radioChannel.forEach(function(item) {
+$(document).ready(function () {
+    $.getJSON("./js/channel.json", function (data) {
+        processData(data.default);
+        $('#curator .curator_list .item').each(function () {
+            $(this).click(function () {
+                var getID = $(this).attr('id');
+                processData(data[getID]);
+            })
+        })
+    });
+});
+
+function processData(data) {
+    $('#list').empty();
+    data.forEach(function (item) {
         var html = `
             <li class="list_item">
             <div class="thumb" style="background-image: url(${item.img})"> </div>
@@ -513,7 +541,7 @@ $.getJSON( "./js/channel.json", function( data ) {
             $('#player .playback_info, .mini-player').find('.artist').text(artist);
             $('.playback_blur, .playback_thumb, .track_info_wrapper .track_info .thumb').css('background-image', img);
             $('#player').find('.playback_info').attr('data-src', src);
-    
+
             TweenMax.to($('.btn-play'), 0.2, {
                 x: 20,
                 opacity: 0,
@@ -537,7 +565,7 @@ $.getJSON( "./js/channel.json", function( data ) {
             $('#video source').attr('src', src);
             var type = newSrc.split('.');
             type = type[type.length - 1];
-            console.log(type);
+            // check source type
             if (type == 'm3u8') {
                 video.src({
                     src: newSrc,
@@ -558,4 +586,4 @@ $.getJSON( "./js/channel.json", function( data ) {
             play(video);
         })
     });
-});
+} 
