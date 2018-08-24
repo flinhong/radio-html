@@ -570,11 +570,13 @@ function processData(data) {
             if (type == 'm3u8') {
                 video.src({
                     src: newSrc,
+                    type: 'application/x-mpegURL',
                     overrideNative: true
                 });
             } else if (type == 'mp3') {
                 video.src({
                     src: newSrc,
+                    type: 'audio/mpeg',
                     overrideNative: false
                 });
             } else {
