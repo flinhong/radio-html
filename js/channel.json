@@ -3,31 +3,31 @@
         {
             "title": "环球资讯广播",
             "org": "CRI - 中国国际广播电台",
-            "src": "http://cri-lh.akamaihd.net/i/cri905_1@183457/master.m3u8",
+            "src": "ҪҶҶҲӸӭӭҡҰҫӯҮҪӬңҩңүңҫҪҦӬҬҧҶӭҫӭҡҰҫӻӲӷҝӳ҂ӳӺӱӶӷӵӭүңұҶҧҰӬүӱҷӺ",
             "img": "../img/cri_news.jpg"
         },
         {
             "title": "中国之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/386/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӺӴӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_voc.jpg"
         },
         {
             "title": "北京音乐广播",
             "org": "北京人民广播电台",
-            "src": "http://audiolive2.rbc.cn:1935/live/fm974/96K/tzwj_video.m3u8",
+            "src": "ҪҶҶҲӸӭӭңҷҦҫҭҮҫҴҧӰӬҰҠҡӬҡҬӸӳӻӱӷӭҮҫҴҧӭҤүӻӵӶӭӻӴ҉ӭҶҸҵҨҝҴҫҦҧҭӬүӱҷӺ",
             "img": "../img/beijing_music_radio.jpg"
         },
         {
             "title": "岷江音乐",
             "org": "四川人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/1110/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӳӳӳӲӭӴӶҩӬүҲӱ",
             "img": "../img/iradio.jpg"
         },
         {
             "title": "HitFM",
             "org": "CRI - 中国国际广播电台",
-            "src": "http://cri-lh.akamaihd.net/i/cri887_1@183455/master.m3u8",
+            "src": "ҪҶҶҲӸӭӭҡҰҫӯҮҪӬңҩңүңҫҪҦӬҬҧҶӭҫӭҡҰҫӺӺӵҝӳ҂ӳӺӱӶӷӷӭүңұҶҧҰӬүӱҷӺ",
             "img": "../img/cri_hitfm.jpg"
         },
         {
@@ -39,25 +39,25 @@
         {
             "title": "动感 101",
             "org": "SMG - 上海文广新闻传媒集团",
-            "src": "https://lhttp.qingting.fm/live/274/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӳӳӵӷӭӴӶҩӬүҲӱ",
             "img": "../img/101.jpg"
         },
         {
             "title": "Radio 1 | Hong Kong",
             "org": "RTHK",
-            "src": "http://rthkaudio1-lh.akamaihd.net/i/radio1_1@355864/master.m3u8",
+            "src": "ҪҶҶҲӸӭӭҰҶҪҩңҷҦҫҭӳӯҮҪӬңҩңүңҫҪҦӬҬҧҶӭҫӭҰңҦҫҭӳҝӳ҂ӱӷӷӺӴӶӭүңұҶҧҰӬүӱҷӺ",
             "img": "../img/rthk_radio1.jpg"
         },
         {
             "title": "Heart Radio",
             "org": "Global Media & Entertainment",
-            "src": "http://vis.media-ice.musicradio.com/HeartUK",
+            "src": "ҪҶҶҲӸӭӭҴҫұӬүҧҦҫңӯҫҡҧӬүҷұҫҡҰңҦҫҭӬҡҭүӭҊҧңҰҶҗ҉",
             "img": "../img/heart_radio.png"
         },
         {
             "title": "古典音樂台 | 台中",
             "org": "Family Broadcasting Company",
-            "src": "http://59.120.88.155:8000/live.mp3",
+            "src": "ҪҶҶҲӸӭӭӷӻӬӳӰӲӬӺӺӬӳӷӷӸӺӲӲӲӭҮҫҴҧӬүҲӱ",
             "img": "../img/classical.jpg"
         }
     ],
@@ -65,49 +65,49 @@
         {
             "title": "Radio 1",
             "org": "BBC",
-            "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_radio_one.m3u8",
+            "src": "ҪҶҶҲұӸӭӭңӬҤҫҮҧұӬҠҠҡҫӬҡҭӬҷҩӭүҧҦҫңӭҮҫҴҧӭүңҬҫҤҧұҶҭӭңҷҦҫҭӭұҫүҷҮҡңұҶӭҪҮұӭҬҭҬҷҩӭҮҭҵӭңҩӭҠҠҡҝҰңҦҫҭҝҭҬҧӬүӱҷӺ",
             "img": "../img/bbc_radio_1.png"
         },
         {
             "title": "Radio 2",
             "org": "BBC",
-            "src": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p",
+            "src": "ҪҶҶҲӸӭӭҠҠҡүҧҦҫңӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡүҧҦҫңҝҰңҦҫҭӰҝүҤҝҲ",
             "img": "../img/bbc_radio_2.png"
         },
         {
             "title": "Radio 3",
             "org": "BBC",
-            "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_radio_three.m3u8",
+            "src": "ҪҶҶҲұӸӭӭңӬҤҫҮҧұӬҠҠҡҫӬҡҭӬҷҩӭүҧҦҫңӭҮҫҴҧӭүңҬҫҤҧұҶҭӭңҷҦҫҭӭұҫүҷҮҡңұҶӭҪҮұӭҬҭҬҷҩӭҮҭҵӭңҩӭҠҠҡҝҰңҦҫҭҝҶҪҰҧҧӬүӱҷӺ",
             "img": "../img/bbc_radio_3.png"
         },
         {
             "title": "Radio 4",
             "org": "BBC",
-            "src": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_q",
+            "src": "ҪҶҶҲӸӭӭҠҠҡүҧҦҫңӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡүҧҦҫңҝҰңҦҫҭӶҤүҝүҤҝҳ",
             "img": "../img/bbc_radio_4.png"
         },
         {
             "title": "Radio 4 Extra",
             "org": "BBC",
-            "src": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4extra_mf_p",
+            "src": "ҪҶҶҲӸӭӭҠҠҡүҧҦҫңӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡүҧҦҫңҝҰңҦҫҭӶҧҺҶҰңҝүҤҝҲ",
             "img": "../img/bbc_radio_4_extra.jpg"
         },
         {
             "title": "Radio 5 Live",
             "org": "BBC",
-            "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_radio_five_live.m3u8",
+            "src": "ҪҶҶҲұӸӭӭңӬҤҫҮҧұӬҠҠҡҫӬҡҭӬҷҩӭүҧҦҫңӭҮҫҴҧӭүңҬҫҤҧұҶҭӭңҷҦҫҭӭұҫүҷҮҡңұҶӭҪҮұӭҬҭҬҷҩӭҮҭҵӭңҩӭҠҠҡҝҰңҦҫҭҝҤҫҴҧҝҮҫҴҧӬүӱҷӺ",
             "img": "../img/bbc_radio_5.jpg"
         },
         {
             "title": "6 Music",
             "org": "BBC",
-            "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_6music.m3u8",
+            "src": "ҪҶҶҲұӸӭӭңӬҤҫҮҧұӬҠҠҡҫӬҡҭӬҷҩӭүҧҦҫңӭҮҫҴҧӭүңҬҫҤҧұҶҭӭңҷҦҫҭӭұҫүҷҮҡңұҶӭҪҮұӭҬҭҬҷҩӭҮҭҵӭңҩӭҠҠҡҝӴүҷұҫҡӬүӱҷӺ",
             "img": "../img/6_music.png"
         },
         {
             "title": "World Service",
             "org": "BBC",
-            "src": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-einws",
+            "src": "ҪҶҶҲӸӭӭҠҠҡҵұұҡӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡҵұұҡҝүҲӳҝҵұӯҧҫҬҵұ",
             "img": "../img/bbc_world_service.jpg"
         }
     ],
@@ -115,49 +115,49 @@
         {
             "title": "中国之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/386/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӺӴӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_voc.jpg"
         },
         {
             "title": "Music Radio | 音乐之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/388/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӺӺӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_music_radio.jpg"
         },
         {
             "title": "中国交通广播",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/4985/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӶӻӺӷӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_jiaotong.jpg"
         },
         {
             "title": "经济之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/387/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӺӵӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_jingji.jpg"
         },
         {
             "title": "相声小品",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/4990/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӶӻӻӲӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_xiangsheng.jpg"
         },
         {
             "title": "文艺之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/395/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӻӷӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_wenyi.jpg"
         },
         {
             "title": "Golden Radio | 经典音乐广播",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/389/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӺӻӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_golden_radio.jpg"
         },
         {
             "title": "华夏之声",
             "org": "CNR - 中央人民广播电台",
-            "src": "https://lhttp.qingting.fm/live/392/64k.mp3",
+            "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӻӰӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_huaxia.jpg"
         }
     ]

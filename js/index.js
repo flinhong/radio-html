@@ -516,10 +516,11 @@ $(document).ready(function () {
 function processData(data) {
     $('#list').empty();
     data.forEach(function (item) {
+        console.log(item.src);
         var html = `
             <li class="list_item">
             <div class="thumb" style="background-image: url(${item.img})"> </div>
-            <div class="info" data-src="${item.src}">
+            <div class="info" data-src="${decode(item.src)}">
             <div class="title">${item.title}</div>
             <div class="artist">${item.org}</div>
             </div>
@@ -586,4 +587,23 @@ function processData(data) {
             play(video);
         })
     });
-} 
+}
+
+function decode(str) {
+    var codecStr = "flinhong.com";
+    var codecNum = 0;;
+    
+    for(var i = 0; i < codecStr.length; i++) {
+        codecNum += codecStr.charCodeAt(i);
+    }
+
+    var decoded = '';
+
+    for (var i = 0; i < str.length; i++) {
+        var ch = String.fromCharCode(str.charCodeAt(i) ^ codecNum);
+        // console.log("char: " + ori.charAt(i) + " and coded: " + ch);
+        decoded += ch;
+    }
+
+    return decoded;
+}
