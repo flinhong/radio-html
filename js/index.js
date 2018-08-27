@@ -508,6 +508,7 @@ $(document).ready(function () {
     var chrome = false;
     if (navigator.userAgent.indexOf('Chrome') > -1 || navigator.userAgent.indexOf('Firefox') > -1) {
         chrome = true;
+        if (navigator.userAgent.indexOf('Edge') > -1) chrome = false;
     }
     $.getJSON("./js/channel.json", function (data) {
         processData(data.default, chrome);
