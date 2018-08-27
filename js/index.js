@@ -483,14 +483,17 @@ function play(video) {
 function pause(video) {
     video.pause();
     // console.log('paused...')
+    $('.playback_timeline_start-time').text('Paused');
 }
 
 function updateTime(start) {
-    video.on('timeupdate', function () {
-        var seconds = (new Date() - start) / 1000;
-        var textTime = formatTime(seconds);
-        $('.playback_timeline_start-time').text(textTime);
-    });
+    setTimeout(function(){
+        video.on('timeupdate', function () {
+            var seconds = (new Date() - start) / 1000;
+            var textTime = formatTime(seconds);
+            $('.playback_timeline_start-time').text(textTime);
+        });
+    }, 1000);
 }
 
 function formatTime(seconds) {
@@ -511,16 +514,21 @@ $(document).ready(function () {
             })
         })
     });
+
+    $.get( "https://indevsync.herokuapp.com/cool", function(data) {
+        console.log(data);
+    });
 });
 
 function processData(data) {
     $('#list').empty();
     data.forEach(function (item) {
         // console.log(item.src);
+        var src = item.encoded? decode(item.src) : item.src;
         var html = `
             <li class="list_item">
             <div class="thumb" style="background-image: url(${item.img})"> </div>
-            <div class="info" data-src="${decode(item.src)}">
+            <div class="info" data-src="${src}">
             <div class="title">${item.title}</div>
             <div class="artist">${item.org}</div>
             </div>
@@ -531,6 +539,8 @@ function processData(data) {
 
     $('.list_wrapper li').each(function () {
         $(this).click(function () {
+            video.pause();
+            $('.playback_timeline_start-time').text('Swiching...');
             $('.list_wrapper li.selected').removeClass('selected');
             $(this).addClass('selected');
             var img = $(this).find('.thumb').css('background-image');
@@ -561,32 +571,47 @@ function processData(data) {
                     scale: 1,
                     display: 'block',
                     ease: Power2.easeInOut
-                });
+            });
 
             $('#video source').attr('src', src);
             var type = newSrc.split('.');
             type = type[type.length - 1];
             // check source type
             if (type == 'm3u8') {
-                video.src({
-                    src: newSrc,
-                    type: 'application/x-mpegURL',
-                    overrideNative: true
-                });
+                try {
+                    $.get( "https://indevsync.herokuapp.com/stream?u="+newSrc, function(data) {
+                        console.log(data);
+                        if (data != 'err') {
+                            video.src({
+                                src: data,
+                                type: 'application/x-mpegURL',
+                                overrideNative: true
+                            });
+                            setTimeout(function(){
+                                play(video);
+                            }, 2000);
+                        } else {
+                            alert('something went wrong...');
+                        }
+                    });
+                } catch(err) {
+                    console.log(err);
+                }
             } else if (type == 'mp3') {
                 video.src({
                     src: newSrc,
                     type: 'audio/mpeg',
                     overrideNative: false
                 });
+                play(video);
             } else {
                 video.src({
                     src: newSrc,
                     type: 'audio/aac',
                     overrideNative: false
                 });
+                play(video);
             }
-            play(video);
         })
     });
 }
