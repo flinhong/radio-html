@@ -281,7 +281,7 @@ body {
   background-color: #D3D6DA;
   border-radius: 2px;
   background-size: cover;
-  background-image: url("../img/cri_news.jpg");
+  background-image: url("../img/cnr_voc.jpg");
 }
 .track_info_wrapper .track_info .title {
   white-space: nowrap;
@@ -366,7 +366,7 @@ body {
   transform: scale(1.1);
   filter: blur(32px);
   opacity: 0.24;
-  background-image: url('../img/cri_news.jpg');
+  background-image: url('../img/cnr_voc.jpg');
   transition: 1s;
 }
 
@@ -379,7 +379,7 @@ body {
   position: absolute;
   margin: 35px;
   box-shadow: 0px 12px 30px 0px rgba(97, 45, 45, 0.2);
-  background-image: url('../img/cri_news.jpg');
+  background-image: url('../img/cnr_voc.jpg');
   transition: 1s;
 }
 
@@ -522,9 +522,9 @@ body {
   transform: scale(0.98);
 }
 
-.list .list_item:nth-child(1) .thumb {
+/* .list .list_item:nth-child(1) .thumb {
   background-image: url(../img/6_music.png);
-}
+} */
 
 .selected {
   background-color: rgba(224, 186, 171, 0.19);

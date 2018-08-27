@@ -5,7 +5,8 @@
             "org": "CRI - 中国国际广播电台",
             "src": "http://sk.cri.cn/905.m3u8",
             "img": "../img/cri_news.jpg",
-            "encoded": false
+            "encoded": false,
+            "nochrome": true
         },
         {
             "title": "中国之声",
@@ -33,7 +34,8 @@
             "org": "CRI - 中国国际广播电台",
             "src": "http://sk.cri.cn/887.m3u8",
             "img": "../img/cri_hitfm.jpg",
-            "encoded": false
+            "encoded": false,
+            "nochrome": true
         },
         {
             "title": "相声广播",
@@ -54,7 +56,8 @@
             "org": "RTHK",
             "src": "ҪҶҶҲұӸӭӭҰҶҪҩңҷҦҫҭӳӯҮҪӬңҩңүңҫҪҦӬҬҧҶӭҫӭҰңҦҫҭӳҝӳ҂ӱӷӷӺӴӶӭүңұҶҧҰӬүӱҷӺ",
             "img": "../img/rthk_radio1.jpg",
-            "encoded": true
+            "encoded": true,
+            "nochrome": true
         },
         {
             "title": "Heart Radio",
@@ -77,7 +80,8 @@
             "org": "BBC",
             "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_radio_one.m3u8",
             "img": "../img/bbc_radio_1.png",
-            "encoded": false
+            "encoded": false,
+            "nochrome": true
         },
         {
             "title": "Radio 2",

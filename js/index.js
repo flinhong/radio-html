@@ -505,12 +505,16 @@ function formatTime(seconds) {
 }
 
 $(document).ready(function () {
+    var chrome = false;
+    if (navigator.userAgent.indexOf('Chrome') > -1 || navigator.userAgent.indexOf('Firefox') > -1) {
+        chrome = true;
+    }
     $.getJSON("./js/channel.json", function (data) {
-        processData(data.default);
+        processData(data.default, chrome);
         $('#curator .curator_list .item').each(function () {
             $(this).click(function () {
                 var getID = $(this).attr('id');
-                processData(data[getID]);
+                processData(data[getID], chrome);
             })
         })
     });
@@ -520,21 +524,27 @@ $(document).ready(function () {
     });
 });
 
-function processData(data) {
+function processData(data, chrome) {
     $('#list').empty();
     data.forEach(function (item) {
         // console.log(item.src);
-        var src = item.encoded? decode(item.src) : item.src;
-        var html = `
-            <li class="list_item">
-            <div class="thumb" style="background-image: url(${item.img})"> </div>
-            <div class="info" data-src="${src}">
-            <div class="title">${item.title}</div>
-            <div class="artist">${item.org}</div>
-            </div>
-            </li>
-            `;
-        $('#list').append(html);
+        // exclude item in chrome
+        console.log(chrome)
+        if (chrome && item.nochrome) {
+            console.log('skip this item...')
+        } else {
+            var src = item.encoded? decode(item.src) : item.src;
+            var html = `
+                <li class="list_item">
+                <div class="thumb" style="background-image: url(${item.img})"> </div>
+                <div class="info" data-src="${src}">
+                <div class="title">${item.title}</div>
+                <div class="artist">${item.org}</div>
+                </div>
+                </li>
+                `;
+            $('#list').append(html);
+        }
     });
 
     $('.list_wrapper li').each(function () {
