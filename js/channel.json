@@ -86,51 +86,54 @@
         {
             "title": "Radio 2",
             "org": "BBC",
-            "src": "ҪҶҶҲӸӭӭҠҠҡүҧҦҫңӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡүҧҦҫңҝҰңҦҫҭӰҝүҤҝҲ",
+            "src": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p",
             "img": "../img/bbc_radio_2.png",
-            "encoded": true
+            "encoded": false
         },
         {
             "title": "Radio 3",
             "org": "BBC",
-            "src": "ҪҶҶҲұӸӭӭңӬҤҫҮҧұӬҠҠҡҫӬҡҭӬҷҩӭүҧҦҫңӭҮҫҴҧӭүңҬҫҤҧұҶҭӭңҷҦҫҭӭұҫүҷҮҡңұҶӭҪҮұӭҬҭҬҷҩӭҮҭҵӭңҩӭҠҠҡҝҰңҦҫҭҝҶҪҰҧҧӬүӱҷӺ",
+            "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_radio_three.m3u8",
             "img": "../img/bbc_radio_3.png",
-            "encoded": true
+            "encoded": false,
+            "nochrome": true
         },
         {
             "title": "Radio 4",
             "org": "BBC",
-            "src": "ҪҶҶҲӸӭӭҠҠҡүҧҦҫңӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡүҧҦҫңҝҰңҦҫҭӶҤүҝүҤҝҳ",
+            "src": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_q",
             "img": "../img/bbc_radio_4.png",
-            "encoded": true
+            "encoded": false
         },
         {
             "title": "Radio 4 Extra",
             "org": "BBC",
-            "src": "ҪҶҶҲӸӭӭҠҠҡүҧҦҫңӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡүҧҦҫңҝҰңҦҫҭӶҧҺҶҰңҝүҤҝҲ",
+            "src": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4extra_mf_p",
             "img": "../img/bbc_radio_4_extra.jpg",
-            "encoded": true
+            "encoded": false
         },
         {
             "title": "Radio 5 Live",
             "org": "BBC",
-            "src": "ҪҶҶҲұӸӭӭңӬҤҫҮҧұӬҠҠҡҫӬҡҭӬҷҩӭүҧҦҫңӭҮҫҴҧӭүңҬҫҤҧұҶҭӭңҷҦҫҭӭұҫүҷҮҡңұҶӭҪҮұӭҬҭҬҷҩӭҮҭҵӭңҩӭҠҠҡҝҰңҦҫҭҝҤҫҴҧҝҮҫҴҧӬүӱҷӺ",
+            "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_radio_five_live.m3u8",
             "img": "../img/bbc_radio_5.jpg",
-            "encoded": true
+            "encoded": false,
+            "nochrome": true
         },
         {
             "title": "6 Music",
             "org": "BBC",
-            "src": "ҪҶҶҲұӸӭӭңӬҤҫҮҧұӬҠҠҡҫӬҡҭӬҷҩӭүҧҦҫңӭҮҫҴҧӭүңҬҫҤҧұҶҭӭңҷҦҫҭӭұҫүҷҮҡңұҶӭҪҮұӭҬҭҬҷҩӭҮҭҵӭңҩӭҠҠҡҝӴүҷұҫҡӬүӱҷӺ",
+            "src": "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/low/ak/bbc_6music.m3u8",
             "img": "../img/6_music.png",
-            "encoded": true
+            "encoded": false,
+            "nochrome": true
         },
         {
             "title": "World Service",
             "org": "BBC",
-            "src": "ҪҶҶҲӸӭӭҠҠҡҵұұҡӬҫҡӬҮҮҬҵҦӬҬҧҶӭұҶҰҧңүӭҠҠҡҵұұҡҝүҲӳҝҵұӯҧҫҬҵұ",
+            "src": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-einws",
             "img": "../img/bbc_world_service.jpg",
-            "encoded": true
+            "encoded": false
         }
     ],
     "cnr": [
@@ -189,6 +192,79 @@
             "src": "ҪҶҶҲұӸӭӭҮҪҶҶҲӬҳҫҬҥҶҫҬҥӬҤүӭҮҫҴҧӭӱӻӰӭӴӶҩӬүҲӱ",
             "img": "../img/cnr_huaxia.jpg",
             "encoded": true
+        }
+    ],
+    "cri": [
+        {
+            "title": "News Radio | 环球资讯广播",
+            "org": "CRI - 中国国际广播电台",
+            "src": "http://sk.cri.cn/905.m3u8",
+            "img": "../img/cri_news.jpg",
+            "encoded": false,
+            "nochrome": true
+        },
+        {
+            "title": "华语环球广播",
+            "org": "CRI - 中国国际广播电台",
+            "src": "http://sk.cri.cn/hyhq.m3u8",
+            "img": "../img/cri_hyhq.png",
+            "encoded": false,
+            "nochrome": true
+        },
+        {
+            "title": "HitFM",
+            "org": "CRI - 中国国际广播电台",
+            "src": "http://sk.cri.cn/887.m3u8",
+            "img": "../img/cri_hitfm.jpg",
+            "encoded": false,
+            "nochrome": true
+        },
+        {
+            "title": "怀旧金曲",
+            "org": "CRI - 中国国际广播电台",
+            "src": "https://lhttp.qingting.fm/live/5022038/64k.mp3",
+            "img": "../img/cri_oldies.jpg",
+            "encoded": false
+        },
+        {
+            "title": "南海之声",
+            "org": "CRI - 中国国际广播电台",
+            "src": "http://sk.cri.cn/nhzs.m3u8",
+            "img": "../img/cri_voscs.png",
+            "encoded": false,
+            "nochrome": true
+        },
+        {
+            "title": "Easy FM | 轻松调频",
+            "org": "CRI - 中国国际广播电台",
+            "src": "http://sk.cri.cn/915.m3u8",
+            "img": "../img/cri_ezfm.png",
+            "encoded": false,
+            "nochrome": true
+        },
+        {
+            "title": "China Plus",
+            "org": "CRI - 中国国际广播电台",
+            "src": "http://sk.cri.cn/am846.m3u8",
+            "img": "../img/cri_china_plus.png",
+            "encoded": false,
+            "nochrome": true
+        }
+    ],
+    "other": [
+        {
+            "title": "中国校园之声",
+            "org": "FM520",
+            "src": "https://lhttp.qingting.fm/live/20091/64k.mp3",
+            "img": "../img/ccr.jpg",
+            "encoded": false
+        },
+        {
+            "title": "北京古典音乐",
+            "org": "北京人民广播电台",
+            "src": "https://lhttp.qingting.fm/live/344/64k.mp3",
+            "img": "../img/rbc_classical.jpg",
+            "encoded": false
         }
     ]
 }

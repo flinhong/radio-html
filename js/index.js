@@ -529,7 +529,7 @@ function processData(data, chrome) {
     data.forEach(function (item) {
         // console.log(item.src);
         // exclude item in chrome
-        console.log(chrome)
+        // console.log(chrome)
         if (chrome && item.nochrome) {
             console.log('skip this item...')
         } else {
